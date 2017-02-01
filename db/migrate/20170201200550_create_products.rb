@@ -10,10 +10,6 @@ class CreateProducts < ActiveRecord::Migration[5.0]
   			item.boolean :is_best_offer
   			item.string :path_to_image
 
-
-
-
-
   			item.timestamps
   		end
   end
