@@ -9,7 +9,10 @@ function something()
 	window.localStorage.setItem('bbb', x); //  hh['bbb'] = x
 
 	alert(x);
+}
 
-	
+function add_to_cart()
+{
+	alert('Hello from function');
 
 }
