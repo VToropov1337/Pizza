@@ -2,7 +2,7 @@
 
 function something()
 {
-	var x = window.localStorage.getItem('bbb'); // структура данных локалстрадж это хэш, следовательно это равносилно конструкции x = hh['bbb'] 
+	var x = window.localStorage.getItem('bbb'); // структура данных локалстoрадж это хэш, следовательно это равносилно конструкции x = hh['bbb'] 
 
 	x = x * 1 + 1 // x = x +1 ( in ruby)
 
@@ -13,10 +13,11 @@ function something()
 
 function add_to_cart(id)
 {
-	var x = window.localStorage.getItem('product_'+id);
+	var key = 'product_' + id
+	var x = window.localStorage.getItem(key);
 
 	x = x * 1 + 1
-	window.localStorage.setItem('product_' + id,x);
+	window.localStorage.setItem(key,x);
 
 }
 
