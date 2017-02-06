@@ -21,4 +21,18 @@ function add_to_cart(id)
 
 }
 
+function cart_get_items_of_items()
+{
+	for(var i = 0; < window.localStorage.length; i++)
+	{
+		var key = window.localStorage.key(i); // получаем ключ
+		var value = window.localStorage.getItem(key); //получаем значение, аналог в руби hh[key] = x 
+
+
+
+	}
+
+
+}
+
 
