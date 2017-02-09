@@ -4,7 +4,7 @@
 
 
 <% @products.each do |p| %>
-<div class="col-md-4">
+<div class="col-md-8">
 	<div>
 		<%= p.title %>
 	</div>
@@ -20,17 +20,10 @@
 	<div>
 		Price: <%= p.price %> rub
 	</div>
-	<div class="form-group">
-	<label>Is Vegetarian?</label>
-		<%= p.is_veg %>
-	</div>
 	<div>
-	<button type="button" class="btn btn-success" onClick ="add_to_cart(<%= p.id %>)">Add to cart</button>
+		<button type="button" class="btn btn-success" onclick="add_to_cart(<%= p.id %>)">Add to!</button>
 	</div>
-	
 </div>
 <% end %>
-<br>
-<br>
-<button class="btn btn-primary" onclick="something()">Click me</button>
 
+<button type="button" class="btn btn-primary" onclick="something()">Click me!</button>
