@@ -47,7 +47,7 @@ function cart_get_number_of_items()
 
 			if (key.indexOf('product_') == 0) 
 			{
-					cnt = cnt + value * 1;
+					cnt = cnt * 1 + value * 1;
 			}
 	}
 	return cnt;
