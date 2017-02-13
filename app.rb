@@ -10,6 +10,10 @@ class Product < ActiveRecord::Base
 	   
 end
 
+class Order < ActiveRecord::Base
+
+end
+
 
 
 
@@ -54,3 +58,13 @@ arr = []
 	end
 	return arr
 end
+
+
+post '/place_order' do
+		@order = Order.new params[:order]
+		erb "Thank you! Your order has been placed."
+		@order.save
+		puts @order
+
+	end
+
