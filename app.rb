@@ -62,9 +62,9 @@ end
 
 post '/place_order' do
 		@order = Order.new params[:order]
-		erb "Thank you! Your order has been placed."
 		@order.save
-		puts @order
+		erb :order_placed
+		
 
 	end
 
